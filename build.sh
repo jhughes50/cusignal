@@ -254,9 +254,9 @@ if buildAll || hasArg cusignal; then
     cd ${REPODIR}/python
     if [[ ${INSTALL_TARGET} != "" ]]; then
         if hasArg -c; then
-            python setup.py install --single-version-externally-managed --record record.txt
+            python3 setup.py install --single-version-externally-managed --record record.txt
         else
-            python setup.py install
+            python3 setup.py install
         fi
     fi
 fi
